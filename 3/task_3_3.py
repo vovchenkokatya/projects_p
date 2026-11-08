@@ -2,7 +2,7 @@ import re
 
 def normalize_phone(phone_number):
     normalized = re.sub(r"[^\d+]", r"", phone_number)
-    if normalized.startswith("+38"):
+    if normalized.startswith("+"):
         pass
     elif normalized.startswith("38"):
         normalized = "+" + normalized
